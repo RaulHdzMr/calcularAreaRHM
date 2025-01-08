@@ -30,5 +30,13 @@ public class Circulo {
                 return false;
         }
     }
+
+    public double getRad() {
+        return rad;
+    }
+
+    public void setRad(double radio) {
+        this.rad = radio;
+    }
 }
 
