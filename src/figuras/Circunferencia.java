@@ -22,7 +22,7 @@ public class Circunferencia {
         return 2 * PI * radio * radio;
     }
 
-    public boolean esIgual(Circunferencia otro, boolean conDecimales) {
+    public boolean esIgual(boolean conDecimales, Circunferencia otro) {
         double radio1 = this.radio;
         double radio2 = otro.getRad();
         if (conDecimales) {
