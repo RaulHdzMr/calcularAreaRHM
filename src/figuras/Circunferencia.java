@@ -11,11 +11,15 @@ public class Circunferencia {
     public void imprimir() {
         color = "rojo";
         double d = 2 * radio;
-        double PI = 3.1416;
         System.out.println("Di�metro: " + d);
         System.out.println("Color: " + color);
-        double area = 2 * PI * radio * radio;
+        double area = calcularArea();
         System.out.println(area);
+    }
+
+    private double calcularArea() {
+        double PI = 3.1416;
+        return 2 * PI * radio * radio;
     }
 
     public boolean esIgual(Circunferencia otro, boolean conDecimales) {
